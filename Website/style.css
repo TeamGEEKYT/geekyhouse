@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(#060, #040);
+    color: #fff;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 30px;
+}
+p {
+    font-size: 18px;
+}
+footer {
+    background: linear-gradient(#333, #222);
+    font-size: 15px;
+    padding: 3px;
+}
+header {
+    background: linear-gradient(#080, #0b0);
+    padding: 2px;
+}
+button {
+    background: linear-gradient(#1fafd2, #2ebec1);
+    font-size: 25px;
+    color: #fff;
+    padding: 3px;
+}
+button:hover {
+    background: linear-gradient(#12bce6, #0be4e8);
+    font-size: 30px;
+}
+.smalltext {
+    font-size: 15px;
+}
+.container {
+    background: linear-gradient(#067119, #04681f);
+    padding: 1px;
+}
+.btn-red {
+    background: linear-gradient(#e70606, #d1030e);
+    font-size: 25px;
+    color: #fff;
+}
+.btn-red:hover {
+    background: linear-gradient(#ff0000, #f60a15);
+    font-size: 30px;
+}
+.btn-gray {
+    background: linear-gradient(#666, #777);
+    font-size: 25px;
+    color: #fff;
+}
+.btn-gray:hover {
+    background: linear-gradient(#888, #999);
+    font-size: 30px;
+}
+
+.highlight {
+    background-color: #00b;
+}
+.inv {
+    color: #0000; font-size: 10px;
+}
+.inv_footer {
+    color: #0000; font-size: 5.5px;
+}

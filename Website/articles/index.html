@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Articles - Geeky House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>GEEKY HOUSE</h1>
+        <p>Articles</p>
+    </header>
+
+    <p>all my useless, yet random articles</p>
+
+    <div class="container">
+        <h2>RANDOM CHAT MESSAGES</h2>
+        <p>Random, yet chat messages.</p>
+        <button onclick="seeArticle('randomchatmessages')">See</button>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h2>FINITY BASED ARTICLE</h2>
+        <p>Finity told me what to add in the article and I added it.</p>
+        <button onclick="seeArticle('finity-based-article')">See</button>
+    </div>
+
+    <br>
+
+    <footer><br>
+        &copy; Team Geek 2026 - All Rights Reserved
+    <p class="inv_footer">a</p></footer>
+</body>
+
+<script>
+    function seeArticle(article) {
+        window.location.href = article+".html";
+    }
+</script>
