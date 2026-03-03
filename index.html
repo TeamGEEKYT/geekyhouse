@@ -1,5 +1,11 @@
 please wait, as we redirect you to the website
 
 <script>
+  const params = new URLSearchParams(window.location.search);
+  const redirectionfailed = params.get('redirection_failed');
+
+  if (redirectionfailed == 1) {
+    alert("The mentionned redirection does not exist or no redirection has been given. You will be redirected to Geeky House.")
+  }
   window.location.href = "/geekyhouse/Website";
 </script>
