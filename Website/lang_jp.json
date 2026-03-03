@@ -2,6 +2,7 @@
     "page_home_header": "ホーム",
     "page_home_language_container_title": "言語",
     "page_home_language_container_desc": "利用可能な言語の中から好きな言語を選択してください",
+    "page_home_language_container_note": "奇妙なテキストが表示される場合は、ブラウザのキャッシュをクリアしてみてください。",
     "page_home_aboutme_container_title": "自己紹介",
     "page_home_aboutme_container_p1": "私は YouTube と Twitch で活動している小さな YouTuber 兼ストリーマーです。",
     "page_home_aboutme_container_p2": "主にビデオゲーム関連のコンテンツを作っています。",
@@ -53,4 +54,5 @@
     "allrightsreserved": "© Team Geek 2026 - 全著作権所有<br>AI/Google翻訳による翻訳"
 
 }
+
 
