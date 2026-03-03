@@ -1,0 +1,25 @@
+<body>
+    Redirection...
+    <button onclick="goToURL()">Manual Redirection</button>
+</body>
+<script>
+    const urls = {
+        "validParams": {
+                "gdps_mobile": "https://cdn.discordapp.com/attachments/1478514063607730247/1478517056793215077/TeamGeekGDPS.apk?ex=69a8afcf&is=69a75e4f&hm=b9524d7e75c7311dd755829893faa61b06ecb4e8676f4f19ec5e99e3197741cf&",
+                "gdps_pc": "https://cdn.discordapp.com/attachments/1478514063607730247/1478517057313312890/TeamGeekGDPS.exe?ex=69a8afcf&is=69a75e4f&hm=b018bb8f72cabf0b47924d2353e9df5cb6eac3ae4b6d5b880b5b35aa7ff85d26&"
+            },
+            "incorrect": "/geekyhouse"
+        }
+    const params = new URLSearchParams(window.location.search);
+    const u = params.get('u');
+
+    function goToURL() {
+        if (u && urls.validParams[u]) {
+            window.location.href = urls.validParams[u];
+        } else {
+            window.location.href = urls.incorrect;
+        }
+    }
+
+    goToURL()
+</script>
