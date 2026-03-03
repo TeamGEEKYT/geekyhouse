@@ -78,13 +78,13 @@
     <footer><br>
         <p data-i18n="allrightsreserved">&copy; Team Geek 2026 - All Rights Reserved</p>
     <p class="inv_footer">a</p></footer>
+
+    <script src="script.js"></script>
+
+    <script src="i18n.js">
+      const savedLang = localStorage.getItem('lang') ?? 'en';
+      i18n.setLang(savedLang);
+
+    </script>
 </body>
 
-<script src="script.js"></script>
-
-<script src="i18n.js">
-  const savedLang =
-    localStorage.getItem('lang') ?? 'en';
-  i18n.setLang(savedLang);
-
-</script>
