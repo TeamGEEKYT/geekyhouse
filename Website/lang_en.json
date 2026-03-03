@@ -2,6 +2,7 @@
     "page_home_header": "Home",
     "page_home_language_container_title": "LANGUAGES",
     "page_home_language_container_desc": "Select your favorite language among available ones",
+    "page_home_language_container_note": "If you see weird text, try to clear your browser's cache",
     "page_home_aboutme_container_title": "ABOUT ME",
     "page_home_aboutme_container_p1": "I am a small YouTuber and streamer on both YouTube and Twitch.",
     "page_home_aboutme_container_p2": "I'm mostly making video-games related content.",
@@ -51,4 +52,5 @@
     "allrightsreserved": "&copy; Team Geek 2026 - All Rights Reserved"
 
 }
+
 
