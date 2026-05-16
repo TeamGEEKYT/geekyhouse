@@ -41,6 +41,10 @@ button:hover {
     background: linear-gradient(#067119, #04681f);
     padding: 1px;
 }
+.container-important {
+    background: linear-gradient(#710606, #680404);
+    padding: 1px;
+}
 .btn-red {
     background: linear-gradient(#e70606, #d1030e);
     font-size: 25px;

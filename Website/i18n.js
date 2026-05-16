@@ -1,5 +1,5 @@
 const i18n = {
-  currentLang: 'fr',
+  currentLang: 'en',
   translations: {},
 
   async load(lang) {
@@ -28,3 +28,10 @@ const i18n = {
     localStorage.setItem('lang', lang);
   }
 };
+
+const params = new URLSearchParams(window.location.search);
+const lang_URLLL = params.get("lang");
+
+if (lang_URLLL === "en" || lang_URLLL === "fr" || lang_URLLL === "jp") {
+  localStorage.setItem("lang", lang_URLLL); i18n.setLang(lang_URLLL);
+}

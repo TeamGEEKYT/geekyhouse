@@ -1,11 +1,34 @@
-please wait, as we redirect you to the website
+<p id="redirectText">please wait, as we redirect you to the website</p>
 
 <script>
   const params = new URLSearchParams(window.location.search);
   const redirectionfailed = params.get('redirection_failed');
+  const lang = params.get("lang");
 
   if (redirectionfailed == 1) {
     alert("The mentionned redirection does not exist or no redirection has been given. You will be redirected to Geeky House.")
   }
-  window.location.href = "/geekyhouse/Website";
+
+  if (lang==="en") {
+    localStorage.setItem("lang", "en");
+  }
+  if (lang==="fr") {
+    document.getElementById("redirectText").innerText = "merci de patienter pendant qu'on vous redirige vers le site";
+    localStorage.setItem("lang", "fr");
+  }
+  if (lang==="jp") {
+    document.getElementById("redirectText").innerHTML = "サイトへリダイレクトするまでお待ちください。<br>日本語があまり分からないので、Google翻訳を使って日本語に翻訳しました。すみません。";
+    localStorage.setItem("lang", "jp");
+  }
+
+  let red = 0;
+
+  function redirect() {
+    red += 1;
+    if (red == 3) {
+      window.location.href = "/geekyhouse/Website";
+    }
+  }
+
+  const loop = setInterval(redirect, 250)
 </script>

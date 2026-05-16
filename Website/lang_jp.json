@@ -38,8 +38,17 @@
     "page_schedules_sunday_stream": "日曜日は配信なし",
 
     "page_announcements_header": "お知らせ",
+    "page_announcements_languages2_title": "言語サポートの改修",
+    "page_announcements_languages2_p1": "言語を切り替えるには、ページのフッターに移動し、希望の言語をクリックしてください。",
+    "page_announcements_languages2_p2": "現在、フランス語、英語、日本語が引き続きご利用いただけます。",
+    "page_announcements_languages2_p3": "対応ページでは、URLに\"?lang=(言語コード)\"を追加することでも言語を切り替えることができます。",
+    "page_announcements_languages2_footer": "2026年5月17日午後7時41分 (UTC+9) 作成",
   
-  "page_announcements_languages_title": "対応言語について！！！",
+    "page_announcements_cheapviewers_title": "重要 - \"格安\"視聴者リンク",
+    "page_announcements_cheapviewers_1": "\"格安\"視聴者リンクの送信は禁止されており、既に禁止されています！",
+    "page_announcements_cheapviewers_2": "理由や価格に関わらず、いかなる方法であれ視聴者を購入することは認めません。",
+    "page_announcements_cheapviewers_3": "視聴者やフォロワーを購入できるリンクを送信した場合、ライブ配信終了後、<strong>永久BAN</strong>され、Twitchに<strong>通報</strong>されます。",
+    "page_announcements_languages_title": "対応言語について！！！",
   "page_announcements_languages_p1": "Geeky Houseはついに多言語サポートに対応しました！",
   "page_announcements_languages_p2": "現在はフランス語、英語、日本語に対応しています。",
   "page_announcements_languages_p3": "（日本語は話せないのでAI翻訳を使っています。怒らないでね）",

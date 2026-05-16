@@ -1,0 +1,79 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>TeamGeekDash: A new GDPS by Team Geek</title>
+    <link rel="stylesheet" href="/geekyhouse/Website/style.css">
+    <style>
+        body {
+            background: linear-gradient(#050, #070);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/geekyhouse/assets/teamgeekdash_logo.png" height="auto", width="600">
+        <h2 data-i18n="page_tgd_header">The 3rd GDPS by Team Geek</h2>
+    </header>
+
+    <div class="container">
+        <h2>LEVEL UPLOAD</h2>
+        <p>This page will explain everything about Level Upload.</p>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h2>LEVEL UPLOAD</h2>
+        <p>Level upload on itself requires a few things. You can upload a level under following conditions:</p>
+        <p>- Having an account</p>
+        <p>- Not posting anything innapropriate (Includes NSFW, harmful content, swears, etc) with no warning screen in-level (and confirmation upon clicking)</p>
+        <p>- Level is humanly possible on Normal mode, verified or not</p>
+        <p>- Level is not a copy-paste of another one's in the GDPS</p>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h2>LEVEL RATING</h2>
+        <p>Your level can be rated if:</p>
+        <p>- The level duration is at least 30 seconds (Must last 31 seconds). On platformer levels, if the level cannot be speedrunned in less than 30 seconds, the level can be rated. If required, toggle off the End Trigger and toggle it back on 30 seconds later.</p>
+        <p>- The level doesn't contains stolen stuff from Geometry Dash or the GDPS with no difference without permission.</p>
+        <br>
+        <p>To get Creator Points with your level, you must verify the level, or let anyone else do it for you, with video proof if the level is Insane or Demon. Upon Team Geek validation, you get the required amount of CP</p>
+        <p>Same goes with Featured, Epic, Legendary and Mythic rates.</p>
+    </div>
+
+    <p> </p>
+
+    <div class="container" id="demonlist">
+        <h2>APPEARANCE IN DEMONLIST</h2>
+        <p>For your level to appear in the Demonlist, the level must:</p>
+        <p>- Be a Rated Insane Demon or a Rated Extreme Demon</p>
+        <p>- Be verified with video proof from yourself or someone else</p>
+        <p>- Be hard enough to appear in the Demonlist</p>
+        <br>
+        <p>You can check the current demonlist using the following button:</p>
+        <button onclick="window.location.href = 'demonlist.html';">DEMONLIST</button>
+        <p></p>
+    </div>
+
+    <br>
+
+    <footer><br>
+        <p>&copy; Team Geek 2026 - All Rights Reserved</p>
+        <p>&copy; Geometry Dash is made by RobtopGames</p>
+        <p id="languagesFooter"></p>
+    <p class="inv_footer">a</p></footer>
+
+    <script src="/geekyhouse/Website/script.js"></script>
+    <script src="/geekyhouse/Website/i18n.js"></script>
+    <script src="/geekyhouse/scr/footerlang.js"></script>
+
+    <script>
+      (async () => {
+        const savedLang = localStorage.getItem('lang') ?? 'en';
+        await i18n.setLang(savedLang);
+      })();
+    </script>
+</body>
