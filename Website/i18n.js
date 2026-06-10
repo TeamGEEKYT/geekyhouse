@@ -3,7 +3,7 @@ const i18n = {
   translations: {},
 
   async load(lang) {
-    const res = await fetch(`/geekyhouse/Website/lang_${lang}.json`);
+    const res = await fetch(`/geekyhouse/Website/lang_${lang}.json?nocache=`+Date.now());
     this.translations[lang] = await res.json();
   },
 
