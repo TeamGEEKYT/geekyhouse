@@ -58,6 +58,11 @@
     "page_announcements_newwebsite_p3": "yet i'm having fun with my viewers",
     "page_announcements_newwebsite_footer": "Made 20th February 2026 at 8:53PM (UTC)",
 
+    "page_videos_header": "Videos",
+
+    "page_subgoals_header": "Goals",
+    "page_subgoals_yt": "YOUTUBE SUBSCRIBERS",
+
     "page_tgd_header": "The 3rd GDPS by Team Geek",
 
     "page_tgdindex_etr1": "Yet another Easy-to-rate GDPS",
@@ -78,6 +83,11 @@
     "page_tgddownload_text2": "Once it is downloaded, press on the new button in the Geometry Dash menu and press the New button in the bottom-right corner.",
     "page_tgddownload_text3": "Click \"Save\", press \"Use\" and restart the game.",
     "page_tgddownload_button": "Copy to clipboard URL",
+
+    "page_ultimateguide_header": "Ultimate Guide",
+    "page_ultimateguide_lang1": "Warning",
+    "page_ultimateguide_lang2": "This page isn't translated in English.",
+    "page_ultimateguide_lang3": "It is possible that the content is about something not available in your language.",
 
     "allrightsreserved": "&copy; Team Geek 2026 - All Rights Reserved"
 
