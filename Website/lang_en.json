@@ -36,6 +36,8 @@
     "page_schedules_saturday": "SATURDAY",
     "page_schedules_sunday": "SUNDAY",
     "page_schedules_sunday_stream": "no stream on sundays",
+    "page_schedules_weekly": "Weekly Minecraft Hardcore Livestream",
+    "page_schedules_noweekly": "Weekly Minecraft Hardcore Livestream <span style='color: #f00;'>(CANCELLED)</span>",
 
     "page_announcements_header": "Announcements",
     "page_announcements_languages2_title": "Languages Support Rework",
