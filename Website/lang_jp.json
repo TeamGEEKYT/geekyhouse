@@ -36,6 +36,8 @@
     "page_schedules_saturday": "土曜日",
     "page_schedules_sunday": "日曜日",
     "page_schedules_sunday_stream": "日曜日は配信なし",
+    "page_schedules_weekly": "毎週開催のハードコアMinecraftライブ",
+    "page_schedules_noweekly": "毎週開催のハードコアMinecraftライブ <span style='color: #f00;'>(中止)</span>",
 
     "page_announcements_header": "お知らせ",
     "page_announcements_languages2_title": "言語サポートの改修",
