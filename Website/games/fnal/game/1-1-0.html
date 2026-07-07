@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Five Nights At Leboeuf</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* L'iframe prend toute la place de l'écran */
+  #game-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    display: none; /* caché tant que l'overlay est affiché */
+  }
+
+  #game-frame.visible {
+    display: block;
+  }
+
+  /* Overlay affiché si SHOW_MESSAGE = true */
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(20, 20, 20, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    padding: 20px;
+  }
+
+  #overlay h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  #overlay p {
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    color: #ddd;
+  }
+
+  .btn-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  button {
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+
+  #redirect-btn {
+    background: #555;
+    color: #fff;
+  }
+
+  #start-btn {
+    background: #e63946;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- CONFIGURATION : modifie les valeurs ci-dessous -->
+<!-- ============================================ -->
+<script>
+  const SHOW_MESSAGE = true; // Mets à false pour lancer le jeu directement sans message
+  const REDIRECT_URL = "https://teamgeekyt.itch.io/fnal-1"; // Site vers lequel rediriger
+  const MESSAGE_TITLE = "Avant de commencer";
+  const MESSAGE_TEXT = "Merci de lire les informations avant de démarrer le jeu, ou rends-toi sur la page itch.io originale.";
+</script>
+<!-- ============================================ -->
+
+<div id="overlay" style="display: none;">
+  <h1 id="overlay-title"></h1>
+  <p id="overlay-text"></p>
+  <div class="btn-container">
+    <button id="redirect-btn">Aller sur le site</button>
+    <button id="start-btn">Démarrer le jeu</button>
+  </div>
+</div>
+
+<iframe id="game-frame" frameborder="0" src="https://itch.io/embed-upload/14429231?color=464646" allowfullscreen width="640" height="380">
+  <a href="https://teamgeekyt.itch.io/fnal-1">Play Five Nights At Leboeuf / 1.1.0 on itch.io</a>
+</iframe>
+
+<script>
+  const overlay = document.getElementById('overlay');
+  const gameFrame = document.getElementById('game-frame');
+  const redirectBtn = document.getElementById('redirect-btn');
+  const startBtn = document.getElementById('start-btn');
+
+  document.getElementById('overlay-title').textContent = MESSAGE_TITLE;
+  document.getElementById('overlay-text').textContent = MESSAGE_TEXT;
+
+  redirectBtn.addEventListener('click', () => {
+    window.location.href = REDIRECT_URL;
+  });
+
+  startBtn.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    gameFrame.classList.add('visible');
+  });
+
+  if (SHOW_MESSAGE) {
+    overlay.style.display = 'flex';
+    gameFrame.classList.remove('visible');
+  } else {
+    overlay.style.display = 'none';
+    gameFrame.classList.add('visible');
+  }
+</script>
+
+</body>
+</html>
