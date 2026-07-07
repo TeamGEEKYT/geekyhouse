@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Five Nights At Leboeuf</title>
+<title>Five Nights At Leboeuf - Geeky Launcher</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -14,22 +14,6 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  /* L'iframe prend toute la place de l'écran */
-  #game-frame {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    border: none;
-    display: none; /* caché tant que l'overlay est affiché */
-  }
-
-  #game-frame.visible {
-    display: block;
-  }
-
-  /* Overlay affiché si SHOW_MESSAGE = true */
   #overlay {
     position: fixed;
     top: 0;
@@ -100,9 +84,10 @@
 <!-- ============================================ -->
 <script>
   const SHOW_MESSAGE = true; // Mets à false pour lancer le jeu directement sans message
-  const REDIRECT_URL = "https://teamgeekyt.itch.io/fnal-1"; // Site vers lequel rediriger
-  const MESSAGE_TITLE = "Avant de commencer";
-  const MESSAGE_TEXT = "Merci de lire les informations avant de démarrer le jeu, ou rends-toi sur la page itch.io originale.";
+  const REDIRECT_URL = "https://itch.io/embed-upload/14429231?color=464646"; // Site vers lequel rediriger (bouton "Aller sur le site")
+  const GAME_URL = "https://teamgeekyt.itch.io/fnal-1"; // Lien ouvert dans un nouvel onglet par "Démarrer le jeu"
+  const MESSAGE_TITLE = "Five Nights At Leboeuf v1.1.0";
+  const MESSAGE_TEXT = "You are about to open up Five nights At leboeuf in Version 1.1.0.\nThis version is the latest currently available.";
 </script>
 <!-- ============================================ -->
 
@@ -110,18 +95,13 @@
   <h1 id="overlay-title"></h1>
   <p id="overlay-text"></p>
   <div class="btn-container">
-    <button id="redirect-btn">Aller sur le site</button>
-    <button id="start-btn">Démarrer le jeu</button>
+    <button id="redirect-btn">Open Itch.io Page</button>
+    <button id="start-btn">Start FNAL</button>
   </div>
 </div>
 
-<iframe id="game-frame" frameborder="0" src="https://itch.io/embed-upload/14429231?color=464646" allowfullscreen width="640" height="380">
-  <a href="https://teamgeekyt.itch.io/fnal-1">Play Five Nights At Leboeuf / 1.1.0 on itch.io</a>
-</iframe>
-
 <script>
   const overlay = document.getElementById('overlay');
-  const gameFrame = document.getElementById('game-frame');
   const redirectBtn = document.getElementById('redirect-btn');
   const startBtn = document.getElementById('start-btn');
 
@@ -133,16 +113,14 @@
   });
 
   startBtn.addEventListener('click', () => {
-    overlay.style.display = 'none';
-    gameFrame.classList.add('visible');
+    window.open(GAME_URL, '_blank');
   });
 
   if (SHOW_MESSAGE) {
     overlay.style.display = 'flex';
-    gameFrame.classList.remove('visible');
   } else {
-    overlay.style.display = 'none';
-    gameFrame.classList.add('visible');
+    // Si pas de message à afficher, on ouvre directement le jeu dans un nouvel onglet
+    window.open(GAME_URL, '_blank');
   }
 </script>
 
